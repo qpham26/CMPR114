@@ -21,4 +21,3 @@ if count == 4:
 else:
     print("Not enough valid input. Need 4 inputs to compute.")
 
-#Testing Github
