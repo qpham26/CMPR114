@@ -21,7 +21,7 @@ def total():
 
     average = sum/len(numbers)
     print('the total is ', sum,' the average is ', average)
-    with open("numbers.txt","w") as file:
+    with open("numbers.txt", "w") as file:
         for number in numbers:
             file.write(str(number) + "\n")
 total()
