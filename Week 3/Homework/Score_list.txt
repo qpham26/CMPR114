@@ -1,0 +1,6 @@
+Test score # 1: 92.0
+Test score # 2: 67.0
+Test score # 3: 75.0
+Test score # 4: 88.0
+The lowest score: 67.0
+Average with lowest score dropped: 85.0
