@@ -13,7 +13,7 @@ elif 90000 <= sales <= 100000:
     print(f'Your total sale is ${sales:,.2f}')
     sales = sales * .3
     print(f'Your commission of 30% is ${sales:,.2f}')
-elif sales > 100000 #Assume 30% commission for sales over 100K
+elif sales > 100000: #Assume 30% commission for sales over 100K
     print(f'Your total sale is ${sales:,.2f}')
     sales = sales * .3
     print(f'Your commission of 30% is ${sales:,.2f}')
