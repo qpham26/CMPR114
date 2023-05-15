@@ -1,9 +1,8 @@
-import openai
 import random
+import openai
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
-
+openai.api_key = "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"
 
 class ChatBot:
     def __init__(self):
@@ -36,7 +35,7 @@ def get_joke():
 
 
 def get_trivia():
-    categories = ["history", "science", "geography", "pop culture"]
+    categories = ["history", "science", "geography"]
     category = random.choice(categories)
     prompt = f"Give me a trivia fact about {category}."
     return chatbot.get_response(prompt)
@@ -57,9 +56,9 @@ def main():
         elif user_input.lower() in ["give me trivia", "tell me trivia", "trivia"]:
             response = get_trivia()
         else:
-            response = chatbot.get_response(user_input)
+            prompt = f"You: {user_input}\nBot:"
+            response = chatbot.get_response(prompt)
         print(response)
-
 
 if __name__ == "__main__":
     main()
